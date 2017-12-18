@@ -6,13 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AngularJS-Parcel Test</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">  
+  <link rel="stylesheet" href="./css/simple-sidebar.css">
 </head>
 <body>
   <div class="jumbotron">
     <h4>AngularJS-Parcel Test</h4>      
   </div>
-  <div ng-init="myvar = 'hello'"></div>
-  {{ myvar }}
+
+  <div id="wrapper">
+      
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li>
+          <a href="#">Item</a>
+        </li>
+        <li>
+          <a href="#">Item</a>
+        </li>
+        <li>
+          <a href="#">Item</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /#sidebar -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>            
+        <div ng-init="myvar = 'hello'">
+          {{ myvar }}                  
+        </div>
+      </div>
+    </div><!-- /#page-content -->
+
+  </div><!-- /#wrapper -->
+
   <script src="index.js"></script>
 </body>
 </html>
